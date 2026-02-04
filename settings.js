@@ -13,7 +13,7 @@ global.owner = ['6282113821188'] //['628','628'] 2 owner atau lebih
 global.author = 'Nazedev'
 global.botname = 'Hitori Bot'
 global.packname = 'Bot WhatsApp'
-global.listprefix = ['+','!','.']
+global.listprefix = ['-','#','…']
 
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json' // Taruh url mongodb di sini jika menggunakan mongodb. Format : 'mongodb+srv://...'
@@ -66,7 +66,7 @@ global.APIs = {
 	naze: 'https://api.naze.biz.id',
 }
 global.APIKeys = {
-	'https://api.naze.biz.id': 'YOUR_API_KEY',
+	'https://api.naze.biz.id': 'nz-4fbdd6e86e',
 }
 
 // Lainnya
@@ -80,4 +80,5 @@ fs.watchFile(file, () => {
 	console.log(chalk.redBright(`Update ${__filename}`))
 	delete require.cache[file]
 	require(file)
+
 });
